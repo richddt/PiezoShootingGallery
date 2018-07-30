@@ -8,9 +8,9 @@
 //Variables and Arrays
 const int pinCount = 10; // the number of Targets with embedded Piezos
 const int piezoPins[] = { A0,  A1,  A2,  A3,  A4,  A5,  A6,  A7,  A8,  A9 }; // array of analog input pins for Piezos 
-const int thresh[] =    { 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 }; // array of individual thresholds per Target; Default thresh = 100; lower is more sensitive; 90-900 seems good; Full Range: min = 0, max = 1023
-const int timeout = 20; // delay time (ms) between reading Piezos; default 100, try lower
-int piezoReading[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }; // array for holding Piezos sensor readings
+const int thresh[] =    { 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 }; // array of individual thresholds per Target; Default thresh = 100; lower is more sensitive; 50-100 seems good; Full Range: min = 0, max = 1023
+const int timeout = 20; // delay time (ms) between reading Piezos; default 100, try 20 or lower
+int piezoReading[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }; // array for holding Piezo sensor readings
 
 //#########-SOUNDFX SETTINGS-##############
 const char* soundFX[] = { "TRACK000.mp3", "TRACK001.mp3", "TRACK002.mp3", "TRACK003.mp3", "TRACK004.mp3", "TRACK005.mp3", "TRACK006.mp3", "TRACK007.mp3", "TRACK008.mp3", "TRACK009.mp3" }; // array for holding sound fx filenames
